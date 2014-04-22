@@ -1,12 +1,22 @@
 <h1> Programmes  </h1>
  
 
- <%=  @programmes.each do |p|  %>
+ <%  @programmes.each do |p|  %>
+<table>
+	<tr>
+		<th>
+			details
+		</th>
+       <td>
+       <%=  link_to(p.name, ?????boomerang_programme_path(@boomerang)) %> 
+     
+       </td>
+       <td>
+        <%= p.id %> 
+       </td>
+   </tr>
+</table)
 
- <ul>
-  <li> <%= p.name %> </li>
-
-</ul>
 
 
  <% end %>
