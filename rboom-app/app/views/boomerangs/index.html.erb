@@ -1,0 +1,21 @@
+<h1> <%= pluralize(@boomerangs.count,'Boomerang') %> </h1>
+<%= link_to "Add  new Boomerang", new_boomerang_path %>
+
+
+<% @boomerangs.each do |b| %>
+<article>
+    
+    <header>
+    
+    	<h2> <%=  link_to(b.name, b)%> </h2>
+    	<h3> <%= b.contact_name %> </h3>
+
+    </header>
+    
+</b>
+</b>
+</b>
+<p>**************************</p>
+
+</article>
+<% end %>

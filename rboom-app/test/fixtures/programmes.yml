@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  objective: MyString
+  target: MyString
+  string: MyString
+  boomerang_id: 
+
+two:
+  name: MyString
+  objective: MyString
+  target: MyString
+  string: MyString
+  boomerang_id: 

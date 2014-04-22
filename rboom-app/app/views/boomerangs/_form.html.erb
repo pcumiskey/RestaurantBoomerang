@@ -1,0 +1,27 @@
+<%= form_for (@boomerang) do |b| %>
+<p>
+  <%= b.label :name %><br/>
+  <%= b.text_field :name, autofocus: true %><br/>
+
+
+  <%= b.label :contact_name %><br/>
+  <%= b.text_field :contact_name, size: 20 %><br/>
+
+   <%= b.label :fb_page%><br/>
+  <%= b.text_field :fb_page , size: 35 %><br/>
+
+  <%= b.label :tel_no %><br/>
+  <%= b.text_field :tel_no, size: 10 %><br/>
+
+  
+  <%= b.label :header_file %><br/>
+  <%= b.text_field :header_file, size: 15 %><br/>
+
+
+
+</p>
+<p>
+  <%= b.submit %> |
+  <%= link_to 'cancel', boomerangs_path %>
+  </p>
+  <% end %>
