@@ -1,0 +1,25 @@
+<h1> List Messages </h1>
+
+
+
+<% @messages.each do |m| %>
+<article>
+    
+    <header>
+        <h2> <%= m.timelag %> </h2>
+    	<h2> <%= m.message %> </h2>
+        <h2> <%= m.type    %> </h2>
+        <h3> Edit Message </h3>
+
+    </header>
+    
+</b>
+</b>
+</b>
+<p>**************************</p>
+
+</article>
+
+<% end %>
+<%= link_to "new Message ", new_boomerang_programme_message_path(@programme.boomerang, @programme) %>
+

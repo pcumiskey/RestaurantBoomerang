@@ -1,0 +1,19 @@
+<h1> New Message </h1>
+
+<%= form_for ([@programme.boomerang, @programme,@message]) do |m| %>
+
+
+   <%= m.label :timelag %><br/>
+  <%= m.number_field :timelag, autofocus: true %><br/>
+
+  <%= m.label :message %><br/>
+  
+
+   <%= m.text_area :message, cols: 40, rows: 7 %><br/>
+
+
+  <%= m.submit %>
+<% end %>
+
+
+
