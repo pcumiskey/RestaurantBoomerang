@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  timelag: 1
+  message: MyString
+  type: 
+  programme_id: 
+
+two:
+  timelag: 1
+  message: MyString
+  type: 
+  programme_id: 

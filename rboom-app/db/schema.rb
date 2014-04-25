@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140422142643) do
+ActiveRecord::Schema.define(version: 20140425115320) do
 
   create_table "boomerangs", force: true do |t|
     t.string   "name"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(version: 20140422142643) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "messages", force: true do |t|
+    t.integer  "timelag"
+    t.string   "message"
+    t.string   "type"
+    t.integer  "programme_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "messages", ["programme_id"], name: "index_messages_on_programme_id"
 
   create_table "programmes", force: true do |t|
     t.string   "name"

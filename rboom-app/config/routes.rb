@@ -1,9 +1,12 @@
 RboomApp::Application.routes.draw do
   
 
+
   resources :boomerangs do
 
-       resources :programmes
+       resources :programmes do
+         resources :messages
+       end  
   end
   
 

@@ -6,6 +6,24 @@
      Name:   <%= @programme.name %>
   </p>
 
+<P>
+
+     Boomerang   <%= @programme.boomerang.name %>
+  </p>
+
 <p>
      ID:    <%= @programme.id %> 
    </p>
+
+<p>
+     Objective    <%= @programme.objective %> 
+   </p>
+<p>
+     Taregt    <%= @programme.target %> 
+   </p>
+
+
+
+    	
+
+<%= link_to @programme.boomerang.name,  boomerang_programmes_path(@programme.boomerang ) %>
